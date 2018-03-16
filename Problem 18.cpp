@@ -92,4 +92,46 @@ printf("\n");
 			printf("*****-----Sorted Students according to the ARRIVAL TIME ARE------******\n\n");
 			display(n,student);
 			
+	
+int timer=0;
+int finished=0;
+
+int f=0;
+timer=student[f].arr_time;
+while(finished<n)
+{
+	int max_gifts=0;
+	int chosen=-1;
+	for(int i=0;i<n;i++)
+	{
+		if(student[i].arr_time<=timer && student[i].state==0)
+		{
+			if(student[i].gifts>max_gifts)
+			{
+				chosen=i;
+				max_gifts=student[i].gifts;
+			}
+		}
+	}
+	if(chosen!=-1)
+	{
+		printf("%c  :",student[chosen].name);
+		finished++;
+		student[chosen].state=1;
+		timer+=student[chosen].gifts;
+		printf(": completion time: %d\n",timer);
+	}
+	else
+	{
+		timer++;
+	}
+}
+
+
+		printf("\n\n\t\t\t\t\t\t*****------ PROBLEM 18 SOLVED ------******\n\n");	
+
+
+}
+
+			
 
