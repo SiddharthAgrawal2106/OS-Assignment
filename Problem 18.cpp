@@ -66,3 +66,30 @@ int main()
 		printf("\n\n");
 	}
 
+
+printf("\n");
+	printf("**********----------Entered Details are ----------**********\n");
+	printf("\n**********----------Number of Students are %d -------*******\n",n);
+	display(n,student);
+	
+	printf("\n\n");
+	printf("\n\n");
+	
+	for(i=0;i<n-1;i++)
+	{
+		for(j=0;j<n-1;j++)
+		{
+			if(student[j+1].arr_time<student[j].arr_time)
+			{
+				temp1=student[j];
+				student[j]=student[j+1];
+				student[j+1]=temp1;
+			}
+		}
+	}
+	
+		
+			printf("*****-----Sorted Students according to the ARRIVAL TIME ARE------******\n\n");
+			display(n,student);
+			
+
