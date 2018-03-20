@@ -13,3 +13,49 @@ A  B  C 		 				A  B  C  		A  B  C
 
 
 
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int no_of_proc;
+	int no_of_reso;
+	
+	printf("\nEnter number of Processes: ");
+	scanf("%d",&no_of_proc);
+	
+	printf("\nEnter number of Resources: ");
+	scanf("%d",&no_of_reso);
+	
+	int allo[no_of_proc][no_of_reso];
+	int max[no_of_proc][no_of_reso];
+	int avail[no_of_reso];
+	
+	int i,j;
+	
+	printf("\n-----Enter values for available array-----\n");
+	for(i=0;i<no_of_reso;i++)
+	{
+		printf("\nEnter (%d): ",i+1);
+		scanf("%d",&avail[i]);
+	}
+	
+	printf("\n-----Enter values for Allocation array-----\n");
+	for(i=0;i<no_of_proc;i++)
+	{
+		for(j=0;j<no_of_reso;j++)
+		{
+			printf("\nEnter (%d,%d): ",i,j);
+			scanf("%d",&allo[i][j]);
+		}
+	}
+	
+	printf("\n-----Enter values for Max array-----\n");
+	for(i=0;i<no_of_proc;i++)
+	{
+		for(j=0;j<no_of_reso;j++)
+		{
+			printf("\nEnter (%d,%d): ",i,j);
+			scanf("%d",&max[i][j]);
+		}
+	}
+
