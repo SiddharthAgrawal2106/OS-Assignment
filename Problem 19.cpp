@@ -58,4 +58,35 @@ int main()
 			scanf("%d",&max[i][j]);
 		}
 	}
+	
+
+	printf("\n\n-----Complete Resource Allocation Graph------\n\n");
+	
+	printf("\n\nAvailable\n");
+	for(i=0;i<no_of_reso;i++)
+	{
+		printf("%d\t",avail[i]);
+	}
+	
+	printf("\n\nAllocation\n");
+	for(i=0;i<no_of_proc;i++)
+	{
+		for(j=0;j<no_of_reso;j++)
+		{
+			printf("Process P%d: %d \t",i,allo[i][j]);
+		}
+		printf("\n");
+	}
+	
+	printf("\n\nMax\n");
+	for(i=0;i<no_of_proc;i++)
+	{
+		for(j=0;j<no_of_reso;j++)
+		{
+			printf("Process P%d: %d \t",i,max[i][j]);
+		}
+		printf("\n");
+	}
+	
+
 
