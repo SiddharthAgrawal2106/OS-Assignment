@@ -89,4 +89,62 @@ int main()
 	}
 	
 
+	printf("\n-----NOW THE SOLUTION  START-----\n\n");
+	
+	
+	int count1=0;
+	int count2=0;
+	int proc_state[no_of_proc];
+	
+	for(i=0;i<no_of_proc;i++)
+	{
+		proc_state[i]=0;
+	}
+	
+	int x=0;
+	for(x=0;x<no_of_proc;x++)
+	{
+		//printf("loop1");
+		for(i=0;i<no_of_proc;i++)
+		{
+			count1=0;
+			count2=0;
+		//	printf("Process State: %d",proc_state[i]);
+			if(proc_state[i]==0)
+			{
+				//printf("\n**\t  Process P%d   **",i);
+				for(j=0;j<no_of_reso;j++)
+					{
+						if(max[i][j]-allo[i][j]<=0)
+						{
+							count1=count1+1;
+						}
+					
+						if((avail[j]+allo[i][j])>=max[i][j])
+						{
+							count2=count2+1;
+						}
+					}
+				if(count1==no_of_reso||count2==no_of_reso)
+				{
+					proc_state[i]=1;
+					printf("\n**\tProcess P%d COMPLETED  **",i);
+					int y=0;
+					for(y=0;y<no_of_reso;y++)
+					{
+						avail[y]=avail[y]+allo[i][y];
+					}
+					
+					printf("\n\n PRESENT AVAILABLE RESOURCES:  ");
+					int z=0;
+					for(z=0;z<no_of_reso;z++)
+					{
+						printf("\t%d",avail[z]);
+					}
+					printf("\n");
+
+				}
+			}
+		}
+	}
 
