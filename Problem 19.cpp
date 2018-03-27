@@ -147,4 +147,31 @@ int main()
 			}
 		}
 	}
+	
+	int count3=0;
+for(i=0;i<no_of_proc;i++)
+	{
+		if(proc_state[i]==1)
+		{
+			count3=count3+1;	
+		}
+	}
+if(count3==no_of_proc)
+{
+	printf("\n\n FINAL AVAILABLE RESOURCES:  ");
+	for(i=0;i<no_of_reso;i++)
+	{
+		printf("\t%d",avail[i]);
+	}
+	printf("\n\n\t\t*****    SAFE STATE     *****\n");
+}
+else
+{
+	printf("\n\t\t****   NOT SAFE STATE   *****\n");
+}
+	
+	
+}
+
+
 
