@@ -5,9 +5,6 @@ they are randomly arriving in the billing counter. The accountant gives the pref
 student who has maximum number of gifts. Create a C or Java program to define order of billed
 students?
 */
-
-
-
 #include<stdio.h>
 #include<conio.h>
 struct students
@@ -65,9 +62,8 @@ int main()
 		
 		printf("\n\n");
 	}
-
-
-printf("\n");
+	
+	printf("\n");
 	printf("**********----------Entered Details are ----------**********\n");
 	printf("\n**********----------Number of Students are %d -------*******\n",n);
 	display(n,student);
@@ -92,7 +88,8 @@ printf("\n");
 			printf("*****-----Sorted Students according to the ARRIVAL TIME ARE------******\n\n");
 			display(n,student);
 			
-	
+
+
 int timer=0;
 int finished=0;
 
@@ -127,11 +124,8 @@ while(finished<n)
 	}
 }
 
-
-		printf("\n\n\t\t\t\t\t\t*****------ PROBLEM 18 SOLVED ------******\n\n");	
+		printf("\n\n\t\t\t\t\t\t*****------ PROBLEM 18 UNSOLVED ------******\n\n");	
 
 
 }
-
-			
 

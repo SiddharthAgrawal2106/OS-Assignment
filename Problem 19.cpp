@@ -11,8 +11,6 @@ A  B  C 		 				A  B  C  		A  B  C
              		P4  		0  0  2  		4  3  3
 */
 
-
-
 #include<stdio.h>
 #include<conio.h>
 int main()
@@ -59,7 +57,6 @@ int main()
 		}
 	}
 	
-
 	printf("\n\n-----Complete Resource Allocation Graph------\n\n");
 	
 	printf("\n\nAvailable\n");
@@ -88,7 +85,6 @@ int main()
 		printf("\n");
 	}
 	
-
 	printf("\n-----NOW THE SOLUTION  START-----\n\n");
 	
 	
@@ -172,6 +168,5 @@ else
 	
 	
 }
-
 
 
