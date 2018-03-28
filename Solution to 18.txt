@@ -1,0 +1,78 @@
+
+                                                                        PROBLEM 18
+Enter number of students : 6
+
+Enter arrival time for A :          3
+Enter number of gifts bought by A : 6
+Burst time for A is :               6
+
+Enter arrival time for B :          4
+Enter number of gifts bought by B : 2
+Burst time for B is :               2
+
+Enter arrival time for C :          4
+Enter number of gifts bought by C : 6
+Burst time for C is :               6
+
+Enter arrival time for D :          7
+Enter number of gifts bought by D : 9
+Burst time for D is :               9
+
+Enter arrival time for E :          8
+Enter number of gifts bought by E : 3
+Burst time for E is :               3
+
+Enter arrival time for F :          2
+Enter number of gifts bought by F : 1
+Burst time for F is :               1
+
+
+**********----------Entered Details are ----------**********
+
+**********----------Number of Students are 6 -------*******
+Student Name: A  Arrival Time: 3  Gifts: 6  Burst Time: 6
+
+Student Name: B  Arrival Time: 4  Gifts: 2  Burst Time: 2
+
+Student Name: C  Arrival Time: 4  Gifts: 6  Burst Time: 6
+
+Student Name: D  Arrival Time: 7  Gifts: 9  Burst Time: 9
+
+Student Name: E  Arrival Time: 8  Gifts: 3  Burst Time: 3
+
+Student Name: F  Arrival Time: 2  Gifts: 1  Burst Time: 1
+
+************************************
+
+
+
+
+*****-----Sorted Students according to the ARRIVAL TIME ARE------******
+
+Student Name: F  Arrival Time: 2  Gifts: 1  Burst Time: 1
+
+Student Name: A  Arrival Time: 3  Gifts: 6  Burst Time: 6
+
+Student Name: B  Arrival Time: 4  Gifts: 2  Burst Time: 2
+
+Student Name: C  Arrival Time: 4  Gifts: 6  Burst Time: 6
+
+Student Name: D  Arrival Time: 7  Gifts: 9  Burst Time: 9
+
+Student Name: E  Arrival Time: 8  Gifts: 3  Burst Time: 3
+
+************************************
+F  :: completion time: 3
+A  :: completion time: 9
+D  :: completion time: 18
+C  :: completion time: 24
+E  :: completion time: 27
+B  :: completion time: 29
+
+
+                                                *****------ PROBLEM 18 SOLVED ------******
+
+
+--------------------------------
+Process exited after 7.153 seconds with return value 0
+Press any key to continue . . .
