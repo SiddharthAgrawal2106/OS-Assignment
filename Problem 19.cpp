@@ -166,7 +166,8 @@ else
 	printf("\n\t\t****   NOT SAFE STATE   *****\n");
 }
 	
-	
+		printf("\n\n\t\t\t\t\t\t*****------ PROBLEM 19 SOLVED ------******\n\n");	
+
 }
 
 

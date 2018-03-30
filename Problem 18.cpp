@@ -124,7 +124,7 @@ while(finished<n)
 	}
 }
 
-		printf("\n\n\t\t\t\t\t\t*****------ PROBLEM 18 UNSOLVED ------******\n\n");	
+		printf("\n\n\t\t\t\t\t\t*****------ PROBLEM 18 SOLVED ------******\n\n");	
 
 
 }
